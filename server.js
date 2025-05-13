@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   res.send('<h1>Welcome to the Event Ticketing API</h1>');
 });
 
-const PORT = 5050;
+const PORT = process.env.PORT || 5050;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
